@@ -9,7 +9,7 @@
 <script>
 	$(document).on("pagecreate",function(event){
 		$(window).on("orientationchange",function(event){
-			$("#orientation").text("You are in " + event.orientation + " mode.");
+			$("#orientation").text("You are in " + event.orientation.text() + " mode.");
 		});                     
 	});
 </script>
